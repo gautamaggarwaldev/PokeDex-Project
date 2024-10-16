@@ -1,0 +1,18 @@
+.search-wrapper {
+    margin: 0 auto;
+}
+
+#pokedex-serach {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    width: 600px;
+}
+
+#pokedex-serach::placeholder {
+    font-size: larger;
+    color: red;
+}
+
+input[type="text"] {
+    background: transparent;
+}
