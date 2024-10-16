@@ -26,7 +26,7 @@ function PokemonList() {
 
 
         //iterate over the pokemon info array and collect the suitable info
-        const res = pokemonData.map((pokeData)=> {
+        const PokeListResult = pokemonData.map((pokeData)=> {
             const pokemon = pokeData.data;
             return {
                 id: pokemon.id,
@@ -35,24 +35,26 @@ function PokemonList() {
                 types: pokemon.types
             }
         });
-        console.log(res);
-        setPokemonList(res);
+        console.log(PokeListResult);
+        setPokemonList(PokeListResult);
         setIsLoading(false);
     }
     
     useEffect(()=> {
         downloadPokemons();
-    }, [])
+    }, [pokemonList])
 
     return (
         <div className="pokemonList-wrapper">
-            <div>Pokemon List</div>
+            {/* <div>Pokemon List</div> */}
+            <div className="pokemon-wrapper">
             {
                 (isLoading) ? 'Loading....' : 
                 pokemonList.map((p)=> 
                     <Pokemon name={p.name} image={p.image} key={p.id} />
                 )
             }
+            </div>
         </div>
     )
 
