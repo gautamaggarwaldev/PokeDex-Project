@@ -8,3 +8,24 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+.controls button {
+    display: block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: rgb(246, 150, 6);
+}
+
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}

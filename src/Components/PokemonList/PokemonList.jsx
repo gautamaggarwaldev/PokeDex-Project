@@ -46,7 +46,6 @@ function PokemonList() {
 
     return (
         <div className="pokemonList-wrapper">
-            {/* <div>Pokemon List</div> */}
             <div className="pokemon-wrapper">
             {
                 (isLoading) ? 'Loading....' : 
@@ -54,6 +53,10 @@ function PokemonList() {
                     <Pokemon name={p.name} image={p.image} key={p.id} />
                 )
             }
+            </div>
+            <div className="controls">
+                <button>Prev &#x2190;</button>
+                <button>Next &#x2192;</button>
             </div>
         </div>
     )
