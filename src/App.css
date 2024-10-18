@@ -1,0 +1,20 @@
+.poke {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pokemon-heading {
+    margin : 0 auto;
+}
+
+span { 
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+
+
