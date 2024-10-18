@@ -33,8 +33,8 @@ function PokemonDetails() {
             <img draggable="false" className="pokemon-detail-image" src={pokemon.image} />
             <div className="pokemon-detail-name"><span>{pokemon.name}</span></div>
             <div className="pokemon-detail">Id: <span>{pokemon.id}</span></div>
-            <div className="pokemon-detail">Height: <span>{pokemon.height}</span></div>
-            <div className="pokemon-detail">Weight: <span>{pokemon.weight}</span></div>
+            <div className="pokemon-detail">Height: <span>{pokemon.height}</span> inch</div>
+            <div className="pokemon-detail">Weight: <span>{pokemon.weight}</span> gm</div>
             <div className="pokemon-detail">Species: <span>{pokemon.species}</span></div>
             <div className="pokemon-detail-type">
                 Type: {pokemon.types && pokemon.types.map((t) => (<span key={t}> {t} </span>))}
