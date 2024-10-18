@@ -47,6 +47,7 @@ function PokemonList() {
     
     useEffect(()=> {
         downloadPokemons();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pokemonUrl])
 
     return (
